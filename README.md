@@ -2,6 +2,8 @@
 # Forked for updates
 Will apply changes to Master after I have finished committing changes from this year's runthrough of the lab.
 
+<b>TODO (Most important): Upload existing bug fixes and docs from local machine</b>
+</br>
 TODO: Collect scripts into single program
 </br>
 TODO: Swap out hard-coded server IP's for user input
