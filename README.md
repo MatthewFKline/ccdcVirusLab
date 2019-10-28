@@ -1,3 +1,12 @@
+
+# Forked for updates
+Will merge into Master after I have finished committing changes from this year's runthrough of the lab.
+
+TODO: Collect scripts into single program
+TODO: Swap out hard-coded server IP's for user input
+TODO: Improve virus documentation
+TODO: Upload guide for whoever deploys the lab next year
+
 # CCDC Virus Lab
 
 build.py contains the code for building the digitalocean droplets. 
