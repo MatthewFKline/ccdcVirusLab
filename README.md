@@ -1,6 +1,6 @@
 
 # Forked for updates
-Will merge into Master after I have finished committing changes from this year's runthrough of the lab.
+Will apply changes to Master after I have finished committing changes from this year's runthrough of the lab.
 
 TODO: Collect scripts into single program
 TODO: Swap out hard-coded server IP's for user input
