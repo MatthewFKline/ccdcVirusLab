@@ -1,0 +1,8 @@
+#!/bin/bash
+
+apt-get update
+echo "y" | apt-get install python3-pip
+pip3 install flask redis redis-server
+echo "y" | apt-get install redis-server
+service redis-server start
+./server.py &

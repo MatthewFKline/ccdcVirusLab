@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 from flask import Flask, request
 import redis
 import json
@@ -5,7 +7,7 @@ import time
 
 app = Flask(__name__)
 
-machineCount = 50
+machineCount = 50 # PSA: This doesn't affect the display, just when the update requests loop back to 0
 virusCount = 5
 
 @app.route('/api/submit')
@@ -13,7 +15,7 @@ def addJob():
     id = request.args.get('id')
     virusName = request.args.get('virusName')
     timestamp = time.time()
-    r = redis.StrictRedis(host='redis', port=6379)
+    r = redis.StrictRedis(host='localhost', port=6379) #renamed redis -> localhost
     r.rpush(id, json.dumps({'timestamp': timestamp,
                             'virusName': virusName}))
     return 'Saved'
@@ -27,7 +29,7 @@ def getDeltaTime():
     return getDeltaTimeFromRedis(id, virusName)
 
 def getDeltaTimeFromRedis(id, virusName):
-    r = redis.StrictRedis(host='redis', port=6379)
+    r = redis.StrictRedis(host='localhost', port=6379) #renamed redis -> localhost
     data = [json.loads(x.decode('utf-8')) for x in r.lrange(id, 0, -1) if json.loads(x.decode('utf-8'))['virusName'] == virusName]
     if len(data) > 0:
         min = data[0]

