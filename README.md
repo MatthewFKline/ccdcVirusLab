@@ -1,12 +1,18 @@
 # CCDC Virus Lab
 
-build.py contains the code for building the digitalocean droplets. 
+_build.py_ contains the code for building the digitalocean droplets and deploying the viruses on them. 
 
-down.py destroys all of the created digitalocean droplets. 
+_down.py_ destroys all of the created digitalocean droplets. 
 
-index.html and server.py are the monitoring webserver (server.py also relies on redis).
+_index.html_ and _server.py_ are the monitoring webserver (_server.py_ also relies on redis).
 
-virus.py is an example virus.
+_deploy_scoreboard_droplet.py_ makes a digitalocean droplet and places the scoreboard server files on it.
+
+_provision_scoreboard_droplet_ sets up the scoreboard (should be run on the droplet created with _deploy_scoreboard_droplet.py_)
+
+_update_scoreboard_address_ rewrites the hardcoded IP addresses in each virus (NOTE: Need to a regex in this, currently relies on a non-sustainable placeholder)
+
+_virus.py_ is an example virus.
 
 All the directories contain each individual's virus.
 
@@ -21,3 +27,6 @@ DigitalOcean will cap your maximum number of droplets (either 5 or 10, don't rec
 </br>
 </br>
 Make sure you point the viruses towards your monitoring server.  I.e. spin up the monitoring server first, then edit the IP's in the virus' before running "build.py" to point to the monitoring server.
+</br>
+</br>
+TODO: Elaborate
